@@ -52,6 +52,9 @@ func main() {
 
 # Command Line Examples
 
+The command line executable reads the SCTE packet (splice_info section) from standard input, encoded
+in base64, hex, or raw bitstream and outputs a JSON object to standard output.
+
 # 14.1. time_signal Placement Opportunity Start
 ```
 echo FC3034000000000000FFFFF00506FE72BD0050001E021C435545494800008E7FCF0001A599B00808000000002CA0A18A3402009AC9D17E | scte
