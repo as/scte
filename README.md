@@ -20,6 +20,10 @@ go install github.com/as/scte/cmd/scte@latest
 
 # Library
 
+The `scte.Parse` function accepts raw bitstreams, base64, and hex encoded bitstreams. It
+returns a `scte.Packet` containing a `Header`, `Cmd`, and `Trailer` that optionally
+contains additional descriptors based on the command. Along with a CRC32 as a checksum.
+
 ```
 package main
 
